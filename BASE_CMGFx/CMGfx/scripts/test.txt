@@ -1,0 +1,29 @@
+matrix2DIdentity
+
+drawbegin triangle
+vertex2 45 45
+vertex2 45 60
+vertex2 80 30
+drawend
+
+matrix2DTranslate 100 30
+
+drawbegin triangle
+vertex2 45 45
+vertex2 45 60
+vertex2 80 30
+drawend
+
+drawbegin triangle
+vertex2 10 10
+vertex2 5 30
+vertex2 20 55
+drawend
+
+matrix2DRotate 20
+
+drawbegin triangle
+vertex2 245 245
+vertex2 245 260
+vertex2 280 230
+drawend

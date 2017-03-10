@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Display">
+      <UniqueIdentifier>{8e1c3096-62d2-4142-8c6b-095a699b4873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{fbf1c0b1-7068-465b-88a1-39839061aa1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{eae58085-5214-4641-9c7f-9c924e7f1d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{6c69aa5f-2046-40ae-ae1d-7d205daa34db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{a51b8c3d-5919-4f05-90da-265ad6b19f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{e107ca21-f4a9-455b-8d0e-6913173347e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights">
+      <UniqueIdentifier>{4b23caa4-3dab-4fbd-86f6-5c6617d01381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights\LightCommands">
+      <UniqueIdentifier>{c7388667-057d-4588-ad6f-e8311fe08e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lights\LightTypes">
+      <UniqueIdentifier>{3f8bb06f-3043-4186-81c1-2045a9b67b85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Display\Clipper.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Display\GeoRouter.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Display\Rasterizer.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\CmdCamera.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\CmdDrawPixel.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\CmdViewport.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\Matrix2D.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\Matrix3D.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\Primitives.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ScriptParser.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\States.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Matrix33.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Matrix44.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Vector2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Vector3.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Vector4.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ChildFrm.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\CMGfx.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\CMGfxDoc.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\CMGfxView.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\CntrItem.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\MainFrm.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\oglMFCDialogDlg.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\OpenGLControl.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="States\MatrixManager.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\PrimManager.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\StateManager.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Viewport.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="LightManager.cpp">
+      <Filter>Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>Lights\LightTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Lights\LightTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="SpotLight.cpp">
+      <Filter>Lights\LightTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLightCommands.cpp">
+      <Filter>Lights\LightCommands</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Display\Clipper.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Display\GeoRouter.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Display\Rasterizer.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\CmdCamera.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\CmdCommand.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\CmdDrawPixel.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\CmdViewport.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\Matrix2D.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\Matrix3D.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\Primitives.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ScriptParser.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\States.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Color.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Matrix33.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Matrix44.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MiniMath.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Plane2.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vector2.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vector3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vector4.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vertex2.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Vertex3.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ChildFrm.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\CMGfx.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\CMGfxDoc.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\CMGfxView.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\CntrItem.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\MainFrm.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\oglMFCDialogDlg.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\OpenGLControl.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\resource.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="States\MatrixManager.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\PrimManager.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\StateManager.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Viewport.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="LightManager.h">
+      <Filter>Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLight.h">
+      <Filter>Lights\LightTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SpotLight.h">
+      <Filter>Lights\LightTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="PointLight.h">
+      <Filter>Lights\LightTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLightCommands.h">
+      <Filter>Lights\LightCommands</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CMGfx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\CMGfxDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CMGfx.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CMGfx.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CMGfx.reg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

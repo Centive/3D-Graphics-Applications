@@ -1,0 +1,106 @@
+-- test fill
+fillmode fill
+
+-- set viewport
+-- comment the next line to see full view
+viewport 110 60 600 400
+showviewport on
+
+-- verify drawpixel works and is clipped
+color 1 0 0
+drawpixel 300 200
+drawpixel 10 10
+
+drawbegin point
+color 1 0 0
+vertex2 100 10
+color 0 1 0
+vertex2 32.5 110
+color 0 0 1
+vertex2 167.5 110
+drawend
+
+-- lines form 2nd triangle
+drawbegin line
+color 1 0 0
+vertex2 150 20
+color 0 1 0
+vertex2 270 20
+vertex2 270 20
+color 0 0 1
+vertex2  210 100
+vertex2  210 100
+color 1 0 0
+vertex2 150 20
+drawend
+
+-- first filled triangle, multiple drawbegins, two extra vertices
+drawbegin triangle
+drawbegin line
+drawbegin point
+color 1 0 0
+vertex2 100 20
+color 0 1 0
+vertex2 40 100
+color 0 0 1
+vertex2 160 100
+vertex2 120 20
+vertex2 180 100
+drawend
+
+-- third triangle in line mode
+fillmode line
+drawbegin triangle
+color 1 0 0
+vertex2 320 20
+color 0 1 0
+vertex2 260 100
+color 0 0 1
+vertex2 380 100
+drawend
+
+-- fourth triangle in fill mode ( all one color )
+fillmode fill
+drawbegin triangle
+vertex2 430 100
+vertex2 370 20
+vertex2 490 20
+drawend
+
+drawbegin point
+color 1 0 0
+vertex2 210 30
+color 0 1 0
+vertex2 189 58
+color 0 0 1
+vertex2 231 58
+drawend
+
+-- two scalene triangles, requires split
+drawbegin triangle
+
+-- tri one
+color 1 0 0
+vertex2 40 175
+color 0 1 0
+vertex2 40 250
+color 0 0 1
+vertex2 150 140
+
+-- tri two, demonstrates primitive manager
+color 1 0 0
+vertex2 300 250
+vertex2 170 180
+color 0 1 0
+vertex2 230 150
+
+drawend
+
+drawbegin triangle
+color 1 0 0
+vertex2 750 280
+color 0 0 1
+vertex2 150 270
+color 0 1 0
+vertex2 430 490
+drawend

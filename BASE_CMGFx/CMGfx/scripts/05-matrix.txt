@@ -1,0 +1,35 @@
+fillmode fill
+
+viewport 30 55 400 300
+showviewport on
+
+matrix2DIdentity
+matrix2DScale 0.5 0.5
+matrix2DRotate 20
+matrix2DTranslate 100 200
+
+drawbegin triangle
+color 1 0 0
+vertex2 100 100
+color 0 1 0
+vertex2 220 100
+color 0 0 1
+vertex2 160 180
+drawend
+
+matrix2DIdentity
+matrix2DScale 2 2
+matrix2DShear 0.4 0.4
+matrix2DTranslate -300 -440
+
+drawbegin triangle
+
+vertex2 200 200
+vertex2 200 300
+vertex2 300 200
+
+vertex2 200 300
+vertex2 300 200
+vertex2 300 300
+
+drawend

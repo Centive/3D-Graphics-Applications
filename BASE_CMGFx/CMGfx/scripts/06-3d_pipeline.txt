@@ -1,0 +1,40 @@
+viewport 100 100 700 500
+showviewport on
+fillmode fill
+clip on
+backfacecull on
+
+-- set lookfrom and lookat
+camerapersp 0 5 -10 0 0 0
+
+matrix3didentity
+matrix3dscale 4 4 4
+matrix3drotate 20 -30 -5
+matrix3dtranslate 0 0 8
+
+drawbegin triangle
+-- top
+color 1 0 0
+vertex3 -1 1 1
+vertex3 1 1 1
+vertex3 1 1 -1
+vertex3 1 1 -1
+vertex3 -1 1 -1
+vertex3 -1 1 1
+-- right
+color 0 1 0
+vertex3 1 1 -1
+vertex3 1 1 1
+vertex3 1 -1 1
+vertex3 1 -1 1
+vertex3 1 -1 -1
+vertex3 1 1 -1
+-- front
+color 0 0 1
+vertex3 -1 1 -1
+vertex3 1 1 -1
+vertex3 1 -1 -1
+vertex3 1 -1 -1
+vertex3 -1 -1 -1
+vertex3 -1 1 -1
+drawend
